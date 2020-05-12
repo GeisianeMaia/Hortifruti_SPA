@@ -9,6 +9,8 @@ import { Postagem } from '../model/Postagem';
 })
 export class LojaComponent implements OnInit {
 
+ 
+
   listaPostagens: Postagem []
 
   postagem: Postagem = new Postagem
@@ -28,7 +30,7 @@ export class LojaComponent implements OnInit {
    
   }
 
-  publicar(){
+  cadastrar(){
     this.PostagemService.postPostagem(this.postagem).subscribe((resp: Postagem)=>{
       this.postagem = resp
       location.assign('/loja')

@@ -10,6 +10,8 @@ import { LojaComponent } from './loja/loja.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { HttpClientModule} from '@angular/common/http'
 import { FormsModule} from '@angular/forms'
+import { OrderModule } from 'ngx-order-pipe';
+import { EditarComponent } from './editar/editar.component'
 
 
 @NgModule({
@@ -18,7 +20,8 @@ import { FormsModule} from '@angular/forms'
     NavComponent,
     FooterComponent,
     HomeComponent,
-    LojaComponent
+    LojaComponent,
+    EditarComponent
    
   ],
   imports: [
@@ -26,7 +29,9 @@ import { FormsModule} from '@angular/forms'
     AppRoutingModule,
     FontAwesomeModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    OrderModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

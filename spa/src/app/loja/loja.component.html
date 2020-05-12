@@ -25,7 +25,7 @@
             </div>
 
             <div class="d-flex justify-content-end">
-                <button class="btn btn-outline-info w-25" (click)="publicar()">Cadastrar</button>
+                <button class="btn btn-outline-info w-25" (click)="cadastrar()">Cadastrar</button>
             </div>
 
             <hr class="my-5">
@@ -45,9 +45,9 @@
                     <p class="card-text">Preço: R{{ postagem.preco | currency}}</p>
                     <p class="card-text">Quantidade em estoque: {{ postagem.qtdEstoque}}</p>
 
-                    <button class="mr-3 btn btn-outline-info" [routerLink]="">Editar</button>
+                    <button class="mr-3 btn btn-outline-info" [routerLink]="['/editar', postagem.id]">Editar</button>
 
-                    <button class="mr-3 btn btn-outline-ranger" [routerLink]="">Apagar</button>
+                    <button class="mr-3 btn btn-outline-danger" [routerLink]="">Apagar</button>
                 </div>
             </div>
 

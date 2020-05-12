@@ -27,6 +27,12 @@ postPostagem(postagem: Postagem){
   return this.http.post('http://31.220.57.121:9080/produtos', postagem)
 }
     
+putPostagem(postagem: Postagem){
+  return this.http.put('http://31.220.57.121:9080/produtos', postagem)
+}
 
+getByIdPostagem(id: number){
+  return this.http.get(`http://31.220.57.121:9080/produtos/${id}`)
+}
 
 }
